@@ -1,9 +1,13 @@
-body {
+* {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
 .hero-section {
-  height: 3em;
   background-color: #bbdac6;
+}
+.hero-img {
+}
+.hero-section h1 {
+  font-family: "Rampart One", cursive;
 }
