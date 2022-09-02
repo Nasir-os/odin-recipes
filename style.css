@@ -51,6 +51,7 @@ body {
   border-radius: 0.9em;
   padding: 1em;
   cursor: pointer;
+  grid-column: 1/2;
 }
 .first-feature-cont:hover {
   box-shadow: 1px 1px 8px 2px black;
@@ -60,4 +61,33 @@ span {
 }
 .first-content-box {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-content-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12em;
+  margin-right: em;
+}
+
+.second-feature-cont {
+  background-color: #c4eff2;
+  width: 30%;
+  border-radius: 0.9em;
+  padding: 1em;
+  cursor: pointer;
+}
+.third-feature-cont {
+    background-color: #FFE9A7;
+    width: 30%;
+    border-radius: 0.9em;
+    padding: 1em;
+    cursor: pointer;
+  }
+
+.cucumbersalad-img,.tunacasserole-img {
+  height: 250px;
+  width: 250px;
 }
