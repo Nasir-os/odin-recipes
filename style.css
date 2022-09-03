@@ -4,7 +4,17 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #f5f3f0;
+  background: linear-gradient(128deg, rgba(249, 148, 89, 0.605) 0%, rgba(245,244,240,1) 24%);
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 250px 5fr;
+  column-gap: 2em;
+}
+.sidebar-section {
+  background-color: #ffffff69;
+  grid-column: 1;
+  grid-row: span 2;
+  border-radius: 0.9em;
 }
 
 .hero-section {
@@ -12,6 +22,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 0.9em;
+  grid-column: 2;
+
 }
 .hero-text-container {
   display: flex;
@@ -23,13 +36,12 @@ body {
 }
 .hero-section h1 {
   font-family: "Rampart One", cursive;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 500;
 }
 .hero-section h3 {
   font-size: 1.9rem;
   font-weight: 100;
-  letter-spacing:7px;
 }
 .hero-section button {
   padding: 0.3em 2em;
@@ -41,17 +53,17 @@ body {
   cursor: pointer;
 }
 .feature-section {
-  background-color: #e6efeaab;
-  padding: 1.5em;
+  grid-column: 2;
+  padding-top: 2.5em;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   line-height: 2em;
 }
-.container{
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
   gap: 2em;
 }
 .first-feature-cont {
@@ -63,7 +75,9 @@ body {
   cursor: pointer;
 }
 
-.first-feature-cont:hover, .second-feature-cont:hover, .third-feature-cont:hover {
+.first-feature-cont:hover,
+.second-feature-cont:hover,
+.third-feature-cont:hover {
   box-shadow: 1px 1px 8px 2px black;
 }
 span {
@@ -75,7 +89,8 @@ span {
   align-items: center;
 }
 
-.third-content-box,.second-content-box {
+.third-content-box,
+.second-content-box {
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -88,7 +103,8 @@ span {
 .third-feature-cont {
   background-color: #ffe9a7;
 }
-.third-feature-cont,.second-feature-cont{
+.third-feature-cont,
+.second-feature-cont {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,14 +112,12 @@ span {
   border-top-left-radius: 9em;
   cursor: pointer;
   width: 70%;
-  place-self: center;
 }
 
 .cucumbersalad-img {
   height: 250px;
   width: 250px;
   margin-left: -100px;
-
 }
 .tunacasserole-img {
   height: 200px;
