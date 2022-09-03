@@ -29,6 +29,7 @@ body {
 .hero-section h3 {
   font-size: 1.9rem;
   font-weight: 100;
+  letter-spacing:7px;
 }
 .hero-section button {
   padding: 0.3em 2em;
@@ -44,6 +45,7 @@ body {
   padding: 1.5em;
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  line-height: 2em;
 }
 .container{
   display: flex;
