@@ -4,17 +4,30 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: linear-gradient(128deg, rgba(249, 148, 89, 0.605) 0%, rgba(245,244,240,1) 24%);
+  background: linear-gradient(128deg, rgba(249, 148, 89, 0.786) 0%, rgba(245,244,240,0.3794468470982143) 21%);
   padding: 1.5em;
   display: grid;
   grid-template-columns: 250px 5fr;
-  column-gap: 2em;
+  column-gap: 4em;
 }
 .sidebar-section {
   background-color: #ffffff69;
   grid-column: 1;
   grid-row: span 2;
   border-radius: 0.9em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu i{
+  padding-right: 0.5em;
+}
+.logo img{
+  height: 100px;
+  width: 100px;
+}
+ul{
+  list-style: none;
 }
 
 .hero-section {
