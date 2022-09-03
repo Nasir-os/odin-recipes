@@ -13,8 +13,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-.hero-img {
-}
 .hero-text-container {
   display: flex;
   flex-direction: column;
@@ -44,16 +42,26 @@ body {
 .feature-section {
   background-color: #e6efeaab;
   padding: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
 }
 .first-feature-cont {
+  grid-column: 1/2;
   background-color: #ffece1;
-  width: 40%;
+  width: 90%;
   border-radius: 0.9em;
   padding: 1em;
   cursor: pointer;
-  grid-column: 1/2;
 }
-.first-feature-cont:hover {
+
+.first-feature-cont:hover, .second-feature-cont:hover, .third-feature-cont:hover {
   box-shadow: 1px 1px 8px 2px black;
 }
 span {
@@ -64,30 +72,39 @@ span {
   justify-content: center;
   align-items: center;
 }
-.second-content-box{
+
+.third-content-box,.second-content-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 12em;
-  margin-right: em;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
 }
 
 .second-feature-cont {
   background-color: #c4eff2;
-  width: 30%;
-  border-radius: 0.9em;
-  padding: 1em;
-  cursor: pointer;
 }
 .third-feature-cont {
-    background-color: #FFE9A7;
-    width: 30%;
-    border-radius: 0.9em;
-    padding: 1em;
-    cursor: pointer;
-  }
+  background-color: #ffe9a7;
+}
+.third-feature-cont,.second-feature-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5em;
+  border-top-left-radius: 9em;
+  cursor: pointer;
+  width: 70%;
+  place-self: center;
+}
 
-.cucumbersalad-img,.tunacasserole-img {
+.cucumbersalad-img {
   height: 250px;
   width: 250px;
+  margin-left: -100px;
+
+}
+.tunacasserole-img {
+  height: 200px;
+  width: 200px;
+  margin-left: -100px;
 }
