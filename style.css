@@ -6,13 +6,7 @@
 }
 .index-page,
 .other-page {
-  background: rgb(187, 218, 199);
-  background: linear-gradient(
-    3deg,
-    rgba(187, 218, 199, 0.134) 0%,
-    rgba(208, 238, 239, 0.527) 16%,
-    rgba(255, 236, 225, 0.226) 61%
-  );
+background-color: #bbdac78e;
   padding: 1.5em;
   display: grid;
   grid-template-columns: 250px 5fr;
@@ -179,6 +173,8 @@ ul {
   gap: 2em;
   font-size: larger;
   line-height: 2em;
+background-color: #bbdac78e;
+
 }
 .recipe-img {
   grid-column: 2;
