@@ -4,7 +4,8 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.index-page, .other-page{
+.index-page,
+.other-page {
   background: rgb(187, 218, 199);
   background: linear-gradient(
     3deg,
@@ -28,7 +29,7 @@
   align-items: center;
 }
 
-.logo img {
+#logo-img {
   height: 100px;
   width: 100px;
 }
@@ -122,7 +123,7 @@ ul {
 .third-feature-cont:hover {
   box-shadow: 1px 1px 8px 2px rgba(128, 128, 128, 0.364);
 }
-span {
+.index-page span {
   margin-right: 0.5em;
 }
 .first-content-box {
@@ -171,30 +172,37 @@ span {
   font-size: 3em;
 }
 
-
 /* /////////////////////////////other pages styles//////////////////////////// */
 
-
-.other-page{
-  grid-template-columns: 250px 1fr 1fr;
+.other-page {
+  grid-template-columns: 250px 350px 1fr;
   gap: 2em;
   font-size: larger;
   line-height: 2em;
 }
-.other-page img{
+.recipe-img {
   grid-column: 2;
   grid-row: 1;
   border-radius: 0.9em;
+  height: 350px;
+  width: 350px;
 }
-
-.other-page h1{
+.other-page h1 {
   font-size: 2rem;
   grid-column: 3;
 }
-.description{
+.description {
   grid-column: 3;
   grid-row: 1;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+}
+.description p {
+  padding-top: 3em;
+}
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
 }
