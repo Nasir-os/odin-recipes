@@ -1,17 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
-  background: linear-gradient(128deg, rgba(249, 148, 89, 0.786) 0%, rgba(245,244,240,0.3794468470982143) 21%);
+.index-page, .other-page{
+  background: rgb(187, 218, 199);
+  background: linear-gradient(
+    3deg,
+    rgba(187, 218, 199, 0.134) 0%,
+    rgba(208, 238, 239, 0.527) 16%,
+    rgba(255, 236, 225, 0.226) 61%
+  );
   padding: 1.5em;
   display: grid;
   grid-template-columns: 250px 5fr;
   column-gap: 4em;
+  letter-spacing: 1px;
 }
 .sidebar-section {
-  background-color: #ffffff69;
+  background-color: #f3edde80;
   grid-column: 1;
   grid-row: span 2;
   border-radius: 0.9em;
@@ -19,15 +27,33 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.menu i{
-  padding-right: 0.5em;
-}
-.logo img{
+
+.logo img {
   height: 100px;
   width: 100px;
 }
-ul{
+ul {
   list-style: none;
+}
+.menu li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 4em;
+  padding: 0 0.5em;
+}
+.menu li:hover {
+  background-color: black;
+  color: white;
+  border-radius: 0.6em;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
 }
 
 .hero-section {
@@ -37,7 +63,6 @@ ul{
   align-items: center;
   border-radius: 0.9em;
   grid-column: 2;
-
 }
 .hero-text-container {
   display: flex;
@@ -65,12 +90,16 @@ ul{
   justify-self: flex-start;
   cursor: pointer;
 }
+.hero-section button:hover {
+  background-color: white;
+  color: black;
+}
 .feature-section {
   grid-column: 2;
   padding-top: 2.5em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  line-height: 2em;
+  font-size: 0.9em;
 }
 .container {
   display: flex;
@@ -91,7 +120,7 @@ ul{
 .first-feature-cont:hover,
 .second-feature-cont:hover,
 .third-feature-cont:hover {
-  box-shadow: 1px 1px 8px 2px black;
+  box-shadow: 1px 1px 8px 2px rgba(128, 128, 128, 0.364);
 }
 span {
   margin-right: 0.5em;
@@ -136,4 +165,36 @@ span {
   height: 200px;
   width: 200px;
   margin-left: -100px;
+}
+
+.recipe-page-title {
+  font-size: 3em;
+}
+
+
+/* /////////////////////////////other pages styles//////////////////////////// */
+
+
+.other-page{
+  grid-template-columns: 250px 1fr 1fr;
+  gap: 2em;
+  font-size: larger;
+  line-height: 2em;
+}
+.other-page img{
+  grid-column: 2;
+  grid-row: 1;
+  border-radius: 0.9em;
+}
+
+.other-page h1{
+  font-size: 2rem;
+  grid-column: 3;
+}
+.description{
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 }
