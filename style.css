@@ -50,7 +50,10 @@ ul {
   align-items: center;
   font-size: 1rem;
 }
-
+.menu a{
+  text-decoration: none;
+  color: black;
+}
 .hero-section {
   background-color: #bbdac7;
   display: flex;
